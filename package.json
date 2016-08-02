@@ -1,5 +1,6 @@
 {
   "name": "classpip-services",
+  "description": "Mobile Application for School Gamification",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -7,6 +8,16 @@
     "pretest": "eslint .",
     "posttest": "nsp check"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/classpip/classpip-services.git"
+  },
+  "author": {
+    "name": "Ferran Vila",
+    "email": "ferran.vila.conesa@gmail.com",
+    "url": "https://www.ferranvila.com/"
+  },
+  "license": "Apache-2.0",
   "dependencies": {
     "compression": "^1.0.3",
     "cors": "^2.5.2",
@@ -19,12 +30,7 @@
   },
   "devDependencies": {
     "eslint": "^2.5.3",
+    "eslint-config-loopback": "^4.0.0",
     "nsp": "^2.1.0"
-  },
-  "repository": {
-    "type": "",
-    "url": ""
-  },
-  "license": "UNLICENSED",
-  "description": "classpip-services"
+  }
 }

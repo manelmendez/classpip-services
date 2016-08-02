@@ -1,10 +1,17 @@
 # Classpip Service Oriented Architecture
 
+[![Build Status](https://travis-ci.org/classpip/classpip-services.svg?branch=master)](https://travis-ci.org/classpip/classpip-services)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bc7f317bf0fd4c83a81a8dd00346dce1)](https://www.codacy.com/app/classpip/classpip-services?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=classpip/classpip-services&amp;utm_campaign=Badge_Grade)
+
+[Classpip](https://www.classpip.com) is a Mobile application for School Gamification. The application is builded around a stack of services and websites to provide a full experience in order to gamificate any educational environment.
+
 This repository contains all the services for accessing the (non)restricted elements of the Classpip data model. This SOA exposes all the methods for querying and managing the Classpip data.
 
 ### Global dependencies
 
-Assuming you have already installed [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/)... You have to install [LoopBack](http://loopback.io) tooling for managing the model:
+Make sure you have NodeJS installed. Download the installer [here](https://nodejs.org/dist/latest-v5.x/) or use your favorite package manager. It's best to get the 5x version of node along with the 3x version of npm. This offers the best in stability and speed for building.
+
+You have to install [LoopBack](http://loopback.io) tooling for managing the model:
 
 ```script
 npm install -g strongloop
@@ -12,7 +19,7 @@ npm install -g strongloop
 
 ### Local Dependencies
 
-If you want to develop some changes into the project you should download all the local packages via npm:
+All the project dependencies are manage through [npmjs](https://www.npmjs.com/). To install this dependenices you should run:
 
 ```script
 npm install
