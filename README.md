@@ -1,13 +1,16 @@
-# Classpip Service Oriented Architecture
+# Classpip Services
 
-[![Build Status](https://travis-ci.org/classpip/classpip-services.svg?branch=master)](https://travis-ci.org/classpip/classpip-services)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bc7f317bf0fd4c83a81a8dd00346dce1)](https://www.codacy.com/app/classpip/classpip-services?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=classpip/classpip-services&amp;utm_campaign=Badge_Grade)
+[![Classpip Badge](https://img.shields.io/badge/classpip-services-brightgreen.svg)]()
+[![Build Status](https://travis-ci.org/classpip/classpip-services.svg?branch=master)](https://travis-ci.org/classpip/classpip-services) 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bc7f317bf0fd4c83a81a8dd00346dce1)](https://www.codacy.com/app/classpip/classpip-services?utm_source=github.com&utm_medium=referral&utm_content=classpip/classpip-services&utm_campaign=Badge_Grade)
+
+[![classpip-icon](https://github.com/classpip/classpip/raw/master/resources/icontext-land.png)](http://www.classpip.com/)
 
 [Classpip](https://www.classpip.com) is a Mobile application for School Gamification. The application is builded around a stack of services and websites to provide a full experience in order to gamificate any educational environment.
 
 This repository contains all the services for accessing the (non)restricted elements of the Classpip data model. This SOA exposes all the methods for querying and managing the Classpip data.
 
-### Global dependencies
+## Global dependencies
 
 Make sure you have NodeJS installed. Download the installer [here](https://nodejs.org/dist/latest-v5.x/) or use your favorite package manager. It's best to get the 5x version of node along with the 3x version of npm. This offers the best in stability and speed for building.
 
@@ -17,7 +20,7 @@ You have to install [LoopBack](http://loopback.io) tooling for managing the mode
 npm install -g strongloop
 ```
 
-### Local Dependencies
+## Local Dependencies
 
 All the project dependencies are manage through [npmjs](https://www.npmjs.com/). To install this dependenices you should run:
 
@@ -25,6 +28,6 @@ All the project dependencies are manage through [npmjs](https://www.npmjs.com/).
 npm install
 ```
 
-### License
+## License
 
 Classpip is released under the [Apache2 License](https://github.com/classpip/classpip-services/blob/master/LICENSE).
