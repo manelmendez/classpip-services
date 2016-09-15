@@ -2,6 +2,9 @@
 
 [![Classpip Badge](https://img.shields.io/badge/classpip-services-brightgreen.svg)]()
 [![Build Status](https://travis-ci.org/classpip/classpip-services.svg?branch=master)](https://travis-ci.org/classpip/classpip-services) 
+[![Docker Stars](https://img.shields.io/docker/stars/classpip/classpip-services.svg?maxAge=2592000)](https://hub.docker.com/r/classpip/classpip-services/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/classpip/classpip-services.svg?maxAge=2592000)](https://hub.docker.com/r/classpip/classpip-services/)
+[![Docker Automated buil](https://img.shields.io/docker/automated/classpip/classpip-services.svg?maxAge=2592000)](https://hub.docker.com/r/classpip/classpip-services/)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bc7f317bf0fd4c83a81a8dd00346dce1)](https://www.codacy.com/app/classpip/classpip-services?utm_source=github.com&utm_medium=referral&utm_content=classpip/classpip-services&utm_campaign=Badge_Grade)
 
 [![classpip-icon](https://github.com/classpip/classpip/raw/master/resources/icontext-land.png)](http://www.classpip.com/)
