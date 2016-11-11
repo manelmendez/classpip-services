@@ -1,5 +1,6 @@
 'use strict';
 
+require('newrelic');
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 
