@@ -1,7 +1,7 @@
 # Classpip Services
 
-[![Classpip Badge](https://img.shields.io/badge/classpip-services-brightgreen.svg)]()
-[![Build Status](https://travis-ci.org/classpip/classpip-services.svg?branch=master)](https://travis-ci.org/classpip/classpip-services) 
+[![Classpip Badge](https://img.shields.io/badge/classpip-services-brightgreen.svg)](https://github.com/classpip/classpip-services)
+[![Build Status](https://travis-ci.org/classpip/classpip-services.svg?branch=master)](https://travis-ci.org/classpip/classpip-services)
 [![Docker Stars](https://img.shields.io/docker/stars/classpip/classpip-services.svg?maxAge=2592000)](https://hub.docker.com/r/classpip/classpip-services/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/classpip/classpip-services.svg?maxAge=2592000)](https://hub.docker.com/r/classpip/classpip-services/)
 [![Docker Automated buil](https://img.shields.io/docker/automated/classpip/classpip-services.svg?maxAge=2592000)](https://hub.docker.com/r/classpip/classpip-services/)
