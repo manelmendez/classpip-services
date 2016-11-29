@@ -31,5 +31,9 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "school": {
+    "dataSource": "db",
+    "public": true
   }
 }

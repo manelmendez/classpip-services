@@ -6,6 +6,6 @@ script:
   - npm test
 deploy:
   provider: script
-  script: scripts/deploy.sh
+  script: deploy.sh
   on:
     branch: master
