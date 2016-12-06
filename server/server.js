@@ -3,21 +3,28 @@
 if (process.env.NEW_RELIC_TOKEN) {
   require('newrelic');
 }
+var bodyParser = require('body-parser');
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
 
+app.middleware('initial', bodyParser.urlencoded({ extended: true }));
+
 app.start = function () {
   // start the web server
   return app.listen(function () {
     app.emit('started');
-    //var baseUrl = app.get('url').replace(/\/$/, '');
-    //console.log('Web server listening at: %s', baseUrl);
-    //if (app.get('loopback-component-explorer')) {
-    //var explorerPath = app.get('loopback-component-explorer').mountPath;
-    //console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
-    //}
+    var baseUrl = app.get('url').replace(/\/$/, '');
+    /* eslint-disable */
+    console.log('Web server listening at: %s', baseUrl);
+    /* eslint-enable */
+    if (app.get('loopback-component-explorer')) {
+      var explorerPath = app.get('loopback-component-explorer').mountPath;
+      /* eslint-disable */
+      console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
+      /* eslint-enable */
+    }
   });
 };
 

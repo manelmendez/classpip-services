@@ -31,6 +31,18 @@ All the project dependencies are manage through [npmjs](https://www.npmjs.com/).
 npm install
 ```
 
+## Running
+
+Start the server (`node .`) and open [`localhost:3000`](http://localhost:3000) in your browser to view the app.
+
+## Testing
+
+To run the tests and code validations you could run:
+
+```script
+npm test
+```
+
 ## License
 
 Classpip is released under the [Apache2 License](https://github.com/classpip/classpip-services/blob/master/LICENSE).

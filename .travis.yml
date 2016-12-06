@@ -1,11 +1,15 @@
-sudo: false
-language: node_js
-node_js:
-  - '6'
+sudo: required
+language: ruby
+
+services:
+  - docker
+
 script:
   - npm test
+  - docker build -t classpip/classpip-services .
+
 deploy:
   provider: script
-  script: deploy.sh
+  script: ./deploy.sh
   on:
     branch: master

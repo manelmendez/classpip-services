@@ -2,8 +2,10 @@
 node_modules
 
 .editorconfig
+.eslintignore
 .eslintrc
 .gitattributes
 .gitignore
-.jsbeautifyrc
 .travis.yml
+.yo-rc.json
+deploy.sh
