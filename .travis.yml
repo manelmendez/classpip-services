@@ -5,6 +5,7 @@ services:
   - docker
 
 script:
+  - npm install
   - npm test
   - docker build -t classpip/classpip-services .
 
