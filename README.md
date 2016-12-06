@@ -6,6 +6,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/classpip/classpip-services.svg?maxAge=2592000)](https://hub.docker.com/r/classpip/classpip-services/)
 [![Docker Automated buil](https://img.shields.io/docker/automated/classpip/classpip-services.svg?maxAge=2592000)](https://hub.docker.com/r/classpip/classpip-services/)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bc7f317bf0fd4c83a81a8dd00346dce1)](https://www.codacy.com/app/classpip/classpip-services?utm_source=github.com&utm_medium=referral&utm_content=classpip/classpip-services&utm_campaign=Badge_Grade)
+[![Coverage Status](https://coveralls.io/repos/github/classpip/classpip-services/badge.svg)](https://coveralls.io/github/classpip/classpip-services)
 
 [![classpip-icon](https://github.com/classpip/classpip/raw/master/resources/icontext-land.png)](http://www.classpip.com/)
 
@@ -29,6 +30,18 @@ All the project dependencies are manage through [npmjs](https://www.npmjs.com/).
 
 ```script
 npm install
+```
+
+## Running
+
+Start the server (`node .`) and open [`localhost:3000`](http://localhost:3000) in your browser to view the app.
+
+## Testing
+
+To run the tests and code validations you could run:
+
+```script
+npm test
 ```
 
 ## License
