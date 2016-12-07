@@ -1,5 +1,6 @@
 .git
 node_modules
+coverage/
 
 .editorconfig
 .eslintignore
@@ -9,3 +10,4 @@ node_modules
 .travis.yml
 .yo-rc.json
 deploy.sh
+coveralls.js

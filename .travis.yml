@@ -7,6 +7,7 @@ services:
 script:
   - npm install
   - npm test
+  - npm run coveralls
   - docker build -t classpip/classpip-services .
 
 deploy:
