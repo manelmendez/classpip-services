@@ -1,5 +1,6 @@
 {
-  "name": "Account",
+  "name": "Student",
+  "plural": "students",
   "base": "User",
   "idInjection": true,
   "options": {
@@ -7,6 +8,10 @@
   },
   "properties": {
     "name": {
+      "type": "string",
+      "required": true
+    },
+    "surname": {
       "type": "string",
       "required": true
     }
@@ -18,11 +23,20 @@
       "model": "School",
       "foreignKey": "schoolId"
     },
-    "roles": {
-      "type": "hasMany",
-      "model": "Role",
-      "foreignKey": "principalId",
-      "through": "RoleMapping"
+    "groups": {
+      "type": "hasAndBelongsToMany",
+      "model": "Group",
+      "foreignKey": "groupId"
+    },
+    "avatar": {
+      "type": "belongsTo",
+      "model": "Avatar",
+      "foreignKey": "avatarId"
+    },
+    "badges": {
+      "type": "hasAndBelongsToMany",
+      "model": "Badge",
+      "foreignKey": "studentId"
     }
   },
   "acls": [{
@@ -33,6 +47,12 @@
     },
     {
       "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
       "principalType": "ROLE",
       "principalId": "$owner",
       "permission": "ALLOW"

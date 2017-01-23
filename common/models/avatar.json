@@ -1,5 +1,5 @@
 {
-  "name": "School",
+  "name": "Avatar",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,48 +10,17 @@
       "type": "string",
       "required": true
     },
-    "address": {
+    "image": {
       "type": "string",
       "required": true
-    },
-    "zipCode": {
-      "type": "string",
-      "required": true
-    },
-    "city": {
-      "type": "string",
-      "required": true
-    },
-    "country": {
-      "type": "string",
-      "required": true
-    },
-    "latitude": {
-      "type": "any",
-      "required": true
-    },
-    "longitude": {
-      "type": "any",
-      "required": true
-    },
-    "cif": {
-      "type": "string",
-      "required": true
-    },
-    "phone": {
-      "type": "string",
-      "required": true
-    },
-    "website": {
-      "type": "string"
     }
   },
   "validations": [],
   "relations": {
     "accounts": {
       "type": "hasMany",
-      "model": "Account",
-      "foreignKey": "schoolId"
+      "model": "Student",
+      "foreignKey": "studentId"
     }
   },
   "acls": [{
@@ -63,13 +32,13 @@
     {
       "accessType": "READ",
       "principalType": "ROLE",
-      "principalId": "$everyone",
+      "principalId": "$authenticated",
       "permission": "ALLOW"
     },
     {
       "accessType": "WRITE",
       "principalType": "ROLE",
-      "principalId": "SYS-ADMIN",
+      "principalId": "$owner",
       "permission": "ALLOW"
     }
   ],
