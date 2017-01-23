@@ -9,7 +9,7 @@
   },
   "User": {
     "dataSource": "db",
-    "public": false
+    "public": true
   },
   "AccessToken": {
     "dataSource": "db",
@@ -27,11 +27,42 @@
     "dataSource": "db",
     "public": false
   },
-  "Account": {
+  "Email": {
+    "dataSource": "emailDs"
+  },
+  "School": {
     "dataSource": "db",
     "public": true
   },
-  "School": {
+  "Student": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Teacher": {
+    "dataSource": "db",
+    "public": true
+  },
+  "SchoolAdmin": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Avatar": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Group": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Grade": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Matter": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Badge": {
     "dataSource": "db",
     "public": true
   }
