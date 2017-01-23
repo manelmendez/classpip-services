@@ -1,5 +1,5 @@
 'use strict';
 
 /* eslint-disable */
-module.exports = function (School) {};
+module.exports = function (Avatar) {};
 /* eslint-enable */
