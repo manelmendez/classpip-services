@@ -6,10 +6,17 @@ if (process.env.NEW_RELIC_TOKEN) {
 var bodyParser = require('body-parser');
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var path = require('path');
 
 var app = module.exports = loopback();
 
-app.middleware('initial', bodyParser.urlencoded({ extended: true }));
+// configure view handler
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+app.use(loopback.token());
+
+// configure body parser
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.start = function () {
   // start the web server
