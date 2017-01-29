@@ -23,6 +23,11 @@
       "type": "belongsTo",
       "model": "School",
       "foreignKey": "schoolId"
+    },
+    "avatar": {
+      "type": "belongsTo",
+      "model": "Avatar",
+      "foreignKey": "avatarId"
     }
   },
   "acls": [{

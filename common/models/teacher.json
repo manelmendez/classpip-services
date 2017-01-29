@@ -28,6 +28,11 @@
       "type": "hasMany",
       "model": "Group",
       "foreignKey": "teacherId"
+    },
+    "avatar": {
+      "type": "belongsTo",
+      "model": "Avatar",
+      "foreignKey": "avatarId"
     }
   },
   "acls": [{

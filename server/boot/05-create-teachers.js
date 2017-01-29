@@ -10,7 +10,8 @@ module.exports = function (app, cb) {
     surname: '1',
     email: 'teacher-1@classpip.com',
     emailVerified: 1,
-    schoolId: 1
+    schoolId: 1,
+    avatarId: 2
   }, {
     id: 2,
     username: 'teacher-2',
@@ -19,7 +20,8 @@ module.exports = function (app, cb) {
     surname: '2',
     email: 'teacher-2@classpip.com',
     emailVerified: 1,
-    schoolId: 2
+    schoolId: 2,
+    avatarId: 2
   }], function (err) {
     if (err) throw err;
     process.nextTick(cb);
