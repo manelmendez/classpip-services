@@ -56,9 +56,14 @@
   },
   "validations": [],
   "relations": {
-    "accounts": {
+    "teachers": {
       "type": "hasMany",
-      "model": "Account",
+      "model": "Teacher",
+      "foreignKey": "schoolId"
+    },
+    "students": {
+      "type": "hasMany",
+      "model": "Student",
       "foreignKey": "schoolId"
     }
   },
