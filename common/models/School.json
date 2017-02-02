@@ -52,6 +52,15 @@
     },
     "website": {
       "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
     }
   },
   "validations": [],
