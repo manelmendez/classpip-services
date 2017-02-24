@@ -44,6 +44,25 @@ To run the tests and code validations you could run:
 npm test
 ```
 
+## Local Database
+
+To configure a __local mysql database__ instead the current in-memory configuration, you should replace the **db** field by the following lines into the file ```classpip-services/server/datasources.json```:
+
+```javascript
+{
+  "db": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "<database>",
+    "password": "<local_user_password>",
+    "name": "db",
+    "user": "<local_user>",
+    "connector": "mysql"
+  }
+}
+```
+
 ## License
 
 Classpip is released under the [Apache2 License](https://github.com/classpip/classpip-services/blob/master/LICENSE).
