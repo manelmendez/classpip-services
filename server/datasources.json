@@ -1,7 +1,13 @@
 {
   "db": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "classpip",
+    "password": "1234",
     "name": "db",
-    "connector": "memory"
+    "user": "manel",
+    "connector": "mysql"
   },
   "emailDs": {
     "name": "emailDs",

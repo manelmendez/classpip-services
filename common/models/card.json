@@ -1,0 +1,55 @@
+{
+  "name": "Card",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "collectionId": {
+      "type": "string",
+      "required": true
+    },
+    "ratio": {
+      "type": "string",
+      "required": true
+    },
+    "rank": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "school": {
+      "type": "belongsTo",
+      "model": "Collection",
+      "foreignKey": "collectionId"
+    },
+    "acls": [
+      {
+        "accessType": "*",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "DENY"
+      },
+      {
+        "accessType": "READ",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW"
+      },
+      {
+        "accessType": "WRITE",
+        "principalType": "ROLE",
+        "principalId": "SYS-ADMIN",
+        "permission": "ALLOW"
+      }
+    ],
+    "methods": {}
+  }
+}
