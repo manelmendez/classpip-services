@@ -66,13 +66,12 @@
     "dataSource": "db",
     "public": true
   },
-  "CollectionCards": {
-  "dataSource": "db",
-  "public": true
+  "CollectionCard": {
+    "dataSource": "db",
+    "public": true
   },
   "Card": {
-  "dataSource": "db",
-  "public": true
+    "dataSource": "db",
+    "public": true
   }
-
 }
