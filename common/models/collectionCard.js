@@ -4,5 +4,5 @@
 'use strict';
 
 /* eslint-disable */
-module.exports = function (CollectionCards) {};
+module.exports = function (CollectionCard) {};
 /* eslint-enable */

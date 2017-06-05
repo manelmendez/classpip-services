@@ -1,15 +1,12 @@
 {
   "name": "Card",
+  "plural": "cards",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "string",
-      "required": true
-    },
     "collectionId": {
       "type": "string",
       "required": true
@@ -25,9 +22,9 @@
   },
   "validations": [],
   "relations": {
-    "school": {
+    "collectionCards": {
       "type": "belongsTo",
-      "model": "Collection",
+      "model": "CollectionCard",
       "foreignKey": "collectionId"
     },
     "acls": [
