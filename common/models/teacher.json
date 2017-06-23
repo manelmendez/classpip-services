@@ -33,6 +33,11 @@
       "type": "belongsTo",
       "model": "Avatar",
       "foreignKey": "avatarId"
+    },
+    "collectionCards": {
+      "type": "hasAndBelongsToMany",
+      "model": "CollectionCard",
+      "foreignKey": "collectionCardId"
     }
   },
   "acls": [{

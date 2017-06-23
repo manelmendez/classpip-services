@@ -29,7 +29,12 @@
     "cards": {
       "type": "hasMany",
       "model": "Card",
-      "foreignKey": "collectionId"
+      "foreignKey": "collectionCardId"
+    },
+    "teachers": {
+      "type": "hasAndBelongsToMany",
+      "model": "Teacher",
+      "foreignKey": "teacherId"
     }
   },
   "acls": [{

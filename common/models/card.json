@@ -29,7 +29,7 @@
     "collectionCards": {
       "type": "belongsTo",
       "model": "CollectionCard",
-      "foreignKey": "collectionId"
+      "foreignKey": "collectionCardId"
     }
   },
   "acls": [
