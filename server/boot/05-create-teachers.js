@@ -52,8 +52,20 @@ module.exports = function (app, cb) {
     emailVerified: 1,
     schoolId: 2,
     avatarId: 2
-  }], function (err) {
+  }], function (err, teachers) {
     if (err) throw err;
-    process.nextTick(cb);
+    app.models.CollectionCard.create([{
+      id: 1,
+      name: 'FCB',
+      image: 'http://k30.kn3.net/taringa/C/1/D/6/0/7/Informadoravp/5EA.png',
+      num: '22',
+      createdBy: 'default'
+    }], function (err, collectionCards) {
+      if (err) throw err;
+      teachers[0].collectionCards.add(collectionCards[0], function (err) {
+        if (err) throw err;
+        process.nextTick(cb);
+      })
+    });
   });
 };

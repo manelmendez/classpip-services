@@ -1,46 +1,39 @@
 {
-  "name": "Teacher",
-  "plural": "teachers",
-  "base": "User",
+  "name": "Card",
+  "plural": "cards",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true,
-    "emailVerificationRequired": true
+    "validateUpsert": true
   },
   "properties": {
     "name": {
       "type": "string",
       "required": true
     },
-    "surname": {
+    "image": {
+      "type": "string",
+      "required": true
+    },
+    "ratio": {
+      "type": "string",
+      "required": true
+    },
+    "rank": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "school": {
-      "type": "belongsTo",
-      "model": "School",
-      "foreignKey": "schoolId"
-    },
-    "groups": {
-      "type": "hasMany",
-      "model": "Group",
-      "foreignKey": "teacherId"
-    },
-    "avatar": {
-      "type": "belongsTo",
-      "model": "Avatar",
-      "foreignKey": "avatarId"
-    },
     "collectionCards": {
-      "type": "hasAndBelongsToMany",
+      "type": "belongsTo",
       "model": "CollectionCard",
       "foreignKey": "collectionCardId"
     }
   },
-  "acls": [{
+  "acls": [
+    {
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",
@@ -49,15 +42,16 @@
     {
       "accessType": "READ",
       "principalType": "ROLE",
-      "principalId": "$owner",
+      "principalId": "$everyone",
       "permission": "ALLOW"
     },
     {
       "accessType": "WRITE",
       "principalType": "ROLE",
-      "principalId": "$owner",
+      "principalId": "SYS-ADMIN",
       "permission": "ALLOW"
     }
   ],
   "methods": {}
 }
+
