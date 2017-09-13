@@ -37,6 +37,11 @@
       "type": "hasAndBelongsToMany",
       "model": "Badge",
       "foreignKey": "studentId"
+    },
+    "collectionCards": {
+      "type": "hasAndBelongsToMany",
+      "model": "CollectionCard",
+      "foreignKey": "collectionCardId"
     }
   },
   "acls": [{
