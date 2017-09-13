@@ -35,6 +35,11 @@
       "type": "hasAndBelongsToMany",
       "model": "Teacher",
       "foreignKey": "teacherId"
+    },
+    "students": {
+      "type": "hasAndBelongsToMany",
+      "model": "Student",
+      "foreignKey": "studentId"
     }
   },
   "acls": [{
