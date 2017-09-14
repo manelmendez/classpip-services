@@ -1,5 +1,5 @@
 'use strict';
-
+var multer  = require('multer');
 /* eslint-disable */
 module.exports = function (app) {
 
@@ -60,6 +60,23 @@ module.exports = function (app) {
         });
       });
     });
+  });
+  var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, './collectionTmp')
+    },
+    filename: function (req, file, cb) {
+      cb(null, req.body.fileName)
+    }
+  });
+
+  var upload = multer({ storage: storage });
+  app.post('/upload', upload.single('file'), function(req, res, err) {
+    console.log(req.body, 'Body');
+    if(err) {
+      return res.end("Error uploading file.");
+    }
+    res.end("File is uploaded");
   });
 };
 /* eslint-enable */
