@@ -71,12 +71,8 @@ module.exports = function (app) {
   });
 
   var upload = multer({ storage: storage });
-  app.post('/upload', upload.single('file'), function(req, res, err) {
-    console.log(req.body, 'Body');
-    if(err) {
-      return res.end("Error uploading file.");
-    }
-    res.end("File is uploaded");
+  app.post('/upload', upload.single('file'), function(req, res) {
+    return res.end("/collectionTmp/"+req.body.fileName);
   });
 };
 /* eslint-enable */
