@@ -40,6 +40,11 @@
       "type": "hasAndBelongsToMany",
       "model": "Student",
       "foreignKey": "studentId"
+    },
+    "groups": {
+      "type": "hasAndBelongsToMany",
+      "model": "Group",
+      "foreignKey": "groupId"
     }
   },
   "acls": [{
