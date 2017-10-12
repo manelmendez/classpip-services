@@ -40,7 +40,12 @@
       ]
     }
   },
-  "files": {},
+  "files": {
+    "loopback#static": {
+      "paths": "/collectionTmp",
+      "params": "$!../collectionTmp"
+    }
+  },
   "final": {
     "loopback#urlNotFound": {}
   },
