@@ -58,7 +58,7 @@ module.exports = function (app, cb) {
       id: 1,
       name: 'FCB',
       image: 'http://k30.kn3.net/taringa/C/1/D/6/0/7/Informadoravp/5EA.png',
-      num: '22',
+      num: '20',
       createdBy: 'default'
     }], function (err, collectionCards) {
       if (err) throw err;

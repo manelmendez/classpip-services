@@ -63,7 +63,7 @@ module.exports = function (app) {
   });
   var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, './collectionTmp')
+      cb(null, './public')
     },
     filename: function (req, file, cb) {
       cb(null, req.body.fileName)
@@ -72,7 +72,7 @@ module.exports = function (app) {
 
   var upload = multer({ storage: storage });
   app.post('/upload', upload.single('file'), function(req, res) {
-    return res.end("/collectionTmp/"+req.body.fileName);
+    return res.end("/public/"+req.body.fileName);
   });
 };
 /* eslint-enable */

@@ -42,8 +42,8 @@
   },
   "files": {
     "loopback#static": {
-      "paths": "/collectionTmp",
-      "params": "$!../collectionTmp"
+      "paths": "/public",
+      "params": "$!../public"
     }
   },
   "final": {
