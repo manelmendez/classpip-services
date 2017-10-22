@@ -51,18 +51,18 @@
     "accessType": "*",
     "principalType": "ROLE",
     "principalId": "$everyone",
-    "permission": "ALLOW"
+    "permission": "DENY"
   },
     {
       "accessType": "READ",
       "principalType": "ROLE",
-      "principalId": "$everyone",
+      "principalId": "$authenticated",
       "permission": "ALLOW"
     },
     {
       "accessType": "WRITE",
       "principalType": "ROLE",
-      "principalId": "SYS-ADMIN",
+      "principalId": "$authenticated",
       "permission": "ALLOW"
     }
   ],
