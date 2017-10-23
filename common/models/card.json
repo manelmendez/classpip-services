@@ -31,7 +31,7 @@
       "model": "CollectionCard",
       "foreignKey": "collectionCardId"
     },
-    "student": {
+    "students": {
       "type": "hasAndBelongsToMany",
       "model": "Student",
       "foreignKey": "studentId"
